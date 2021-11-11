@@ -3,3 +3,100 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #111655;
+}
+
+header {
+  padding: 20px 35px 20px 0;
+  background-color: #ece2d8;;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
+  border-bottom: 3px double #d2a400;
+  z-index: 9999;
+}
+
+header h1{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 60px;
+  background-color: #d2a400;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-right: 3px solid #93a8d7;
+  border-top: 3px solid #93a8d7;
+  border-bottom: 3px solid #93a8d7;
+  border-bottom-right-radius: 45px;
+  border-top-right-radius: 10px;
+}
+header h1 span {
+  color: #d2a400;
+  text-shadow: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: auto;
+  margin-right: 15px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 50px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 100px rgb(255, 255, 255);
+  text-decoration: underline #d2a400 5px;
+}
+
+.hero {
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: right;
+}
+
+.hero-quote {
+  display: flex;
+  justify-content: right;
+  margin-top: 420px;
+  background-color: rgba(210, 164, 0, 0.8);
+  background-size: 10px;
+  border-right: 40px solid rgba(210, 164, 0, 0.1);;
+  margin-bottom: 15px;
+  font-style:italic;
+  font-size: 120%;
+  text-align: center;
+  padding: 10px;
+  border-left: 3px solid #93a8d7;
+  border-top: 3px solid #93a8d7;
+  border-bottom: 3px solid #93a8d7;
+  border-bottom-left-radius: 45px;
+  border-top-left-radius: 10px;
+}
