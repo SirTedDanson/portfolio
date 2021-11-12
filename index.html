@@ -12,22 +12,26 @@
 <!-- navigation tags - block level element -->      
 <header>
   <h1>
-    <a href="/"> <span>___</span>M.Dwyer</a><span>_</span>
+    <a href="/">M.Dwyer</a>
   </h1>
   <nav>
     <ul>
+      <div class="nav-group-1"></div>
       <li>
         <a href="#about-me">About Me</a>
       </li>
       <li>
         <a href="#work">Work</a>
       </li>
-      <li>
-        <a href="#contact-me">Contact Me</a>
-      </li>
-      <li>
-        <a href="#resume">Resume</a>
-      </li>
+      </div>
+      
+        <li>
+          <a href="#contact-me">Contact Me</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+      
     </ul>
   </nav>
 </header>
@@ -36,44 +40,48 @@
   <!-- hero/jumbotron -->
   <section class="hero">
     <div class="hero-quote">
-      <h2>“We are what we repeatedly do. 
+      <p>“We are what we repeatedly do. 
         <br>  Excellence, then, is not an act, 
-        <br> but a habit” – Aristotle</h2>
+        <br> but a habit” – Aristotle</p>
     </div>
   </section>
   <!-- End Hero -->
-
   <!-- About Me Section -->
-  <section id="about-me" class="about-me">
-    <h2 class="section-title">About Me</h2>
-    <article>
+  
+  <section id="about-me" class="flex-row" class="section 1" >
+    <div class="section-title">
+      <h2> About Me </h2>
+    </div>
+    <article class="about-me">
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio alias eaque, 
         voluptatem nobis quisquam cumque? Similique, ut explicabo! Ipsa natus aliquid 
-        numquam perspiciatis, sequi repellendus atque facilis quae sit minus.
+        numquam perspiciatis, sequi repellendus atque facilis quae sit minus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ipsam iure architecto enim repellendus quibusdam perspiciatis facilis vero rem expedita! Accusantium accusamus nulla laudantium corporis, exercitationem repellat quo eveniet harum?
       </p>
     </article>
   </section>
-
-  <!-- Work Section -->
-  <section id="work">
-    <h2 class="section-title">Work</h2>
-      <div class="run-buddy-link">
-        <h3>Run Buddy</h3>
-        <a href="https://sirteddanson.github.io/run-buddy/"></a>
+<!-- ------------------------------------------------------------------------------- -->
+  <section id="work" class="flex-row">
+    <div class="section-title">
+      <h2> Work </h2>
       </div>
-      <div class="horiseon-link">
-        <h3>Horiseon</h3>
-        <a href="https://sirteddanson.github.io/horiseon/"></a>
-      </div>
-      <div class="robot-gladiators-link">
-        <h3>Robot Gladiators</h3>
-        <a href="https://sirteddanson.github.io/robot-gladiators/"></a>
-      </div>
+        <section class="work-content">
+          <div class="run-buddy-link">
+            <img src="./assets/images/run-buddy-background.PNG" alt="">
+          </div>
+          <div class="horiseon-link">
+            <img src="./assets/images/run-buddy-background.PNG" alt="">
+          </div>
+          <div class="horiseon-link">
+            <img src="./assets/images/run-buddy-background.PNG" alt="">
+          </div>
+        </section>
   </section>
-
-  <!-- Contact Section -->
-  <section id="contact-me">
-    <h2 class="section-title">Contact Me</h2>
+<!-- ----------------------------------------------------------------------------------- -->
+  <section id="contact-me" class="flex-row">
+    <div class="section-title">
+      <h2> Contact </h2>
+    </div>
+    <article class="about-me">
       <div>
         <h3>614-313-5809</h3>
       </div>
@@ -86,22 +94,8 @@
       <div>
         <h3>Twitch</h3> <a href="https://www.twitch.tv/sirteddanson"></a>
       </div>
+    </article>
   </section>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
   
 </body>
 
