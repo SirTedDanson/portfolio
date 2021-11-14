@@ -67,7 +67,9 @@ header nav ul {
 
 header nav ul li {
   padding: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
 
 header nav ul li a {
@@ -100,21 +102,22 @@ header nav ul li a:hover {
 }
 
 .hero-quote {
-  background-color: var(--primary-color);
-  background-size: 10px;
+  width: 40%;
+  margin-left: 200px;
   margin-bottom: 15px;
   margin-top: 170px;
   font-style:italic;
   font-weight: bold;
   text-align: right;
   padding: 10px;
+  background-color: var(--primary-color);
+  background-size: 10px;
   border-left: 3px solid var(--border-color);
   border-top: 3px solid var(--border-color);
   border-bottom: 3px solid var(--border-color);
   border-bottom-left-radius: 45px;
   border-top-left-radius: 10px;
-  margin-left: 200px;
-  width: 40%;
+  
 }
 
 /* TITLE SECTION STYLING */
@@ -252,7 +255,6 @@ header nav ul li a:hover {
   opacity: 0;
 }
 
-
 /* CONTACT ME SECTION STYLING */
 /* ------------------------------------------------------------------- */
 
@@ -283,14 +285,27 @@ header nav ul li a:hover {
   text-decoration: underline var(--border-color-secondary) 5px;
 }
 
-/* ----- RESPONSIVENESS STYLING ------------------------------------------------------------------- */
-/* Media query for 768px+ ---------------------------------- */
+/* RESPONSIVENESS STYLING START----------------------------------------------------------------------- */
+
+
+
+
+
+/* Media query for 768px+ ----------------Title Font Adjustments------------------ */
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 1.7vw;
   }
 }
-/* Media query for 1200px+ */
+
+/* Media query for min 900-px----------------------Tablet Nav Size Adjustment--------------------------- */
+@media screen and (min-width: 900px) {
+  header nav {
+    width: 60%;
+  }
+}
+
+/* Media query for 1200px+ -------------------Primary Styling For Larger Sceens----------------------*/
 @media screen and (min-width: 1200px) {
 
   /* HEADER STYLING ----------------- */
@@ -319,12 +334,16 @@ header nav ul li a:hover {
   header nav ul li {
     margin-right: 7%;
   }
-
-  .hero-quote {
+  .hero {
+    background-image: url("../images/hero-image-small.jpg");
+    height: 500px;
+  }
+    .hero-quote {
     border-right: 40px solid var(--primary-color);
+    margin-top: 400px;
   }
 
-  /* BODY STYLING ----------------- */
+  /* BODY STYLING ------------------------ */
   .body-margin {
     background-color: var(--background-color);
     margin-left: 3%;
@@ -332,7 +351,7 @@ header nav ul li a:hover {
     margin-bottom: 1px;
   }
 
-  /* SECTION TITLES STYLING ----------------- */
+  /* SECTION TITLES STYLING -------------- */
   .section-title {
     flex: 1 10%;
     border-right: 3px double var(--border-color-secondary);
@@ -380,21 +399,26 @@ header nav ul li a:hover {
   }
 }
 
-/* Media query for 900-1200 ---------------------------------- */
-@media screen and (min-width: 900px) {
-  header nav {
-    width: 60%;
+/* Medai query for 1718px+ ------------------------Title Fonts For Large Screens--------------------------*/ 
+@media screen and (min-width: 1718px) {
+  .hero-quote {
+  margin-top: 420px;
   }
-}
-
-/* Media query for 1800px+ */
-@media screen and (min-width: 1800px) {
   .section-title {
-    font-size: 1.7vw;
+    font-size: 1.6vw;
   }
 }
 
-/* Media query for MAX 400px ---------------------------------- */
+
+
+/* Media query for 400px to 535px -------------------Nav adjustment for small screen transition--------------- */
+@media screen and (min-width: 400px) and (max-width: 535px) {
+  header nav {
+    width: 72%;
+  }
+}
+
+/* Media query for MAX 400px ------------------------Various Font Size Adjustments-------------------------- */
 @media screen and (max-width: 400px) {
   .contact-me a {
     font-size: 13px;
@@ -407,22 +431,24 @@ header nav ul li a:hover {
   .contact-me a {
     font-size: 11px;
   }
-  header nav li {
-    margin-right: 400px;
-  }
+  
   .work-content {
     font-size: 5vw;
   }
 }
 
-/* Media query for MAX 325px ---------------------------------- */
-@media screen and (max-width: 300px) {
+/* Media query for MAX 290px -------------------Nav and App Title Adjustments-------------------------------- */
+@media screen and (max-width: 290px) {
   .app-title {
     font-size: 12px;
     padding-left: 0px;
     padding-right: 20px;
   }
+  header nav ul li {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  header h1 {
+    border-radius: 0;
+  }
 }
-
-
-
