@@ -155,13 +155,14 @@ header nav ul li a:hover {
 
 .work-content {
   width: 80%;
-  margin: 0px 10px 10px 10px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex: 0 80%;
-  margin-left: 30px;
 }
 
 .application-main {
@@ -185,7 +186,7 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   margin: 10px 20px 20px 0px;
   height: 150px;
-  flex: 1 45%;
+  flex: 1 50%;
   border: 3px solid var(--border-color);
   border-left: 10px solid var(--border-color);
   border-bottom: 6px solid var(--border-color);
@@ -200,7 +201,7 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   margin: 10px 20px 20px 0px;
   height: 150px;
-  flex: 1 45%;
+  flex: 1 50%;
   border: 3px solid var(--border-color);
   border-left: 10px solid var(--border-color);
   border-bottom: 6px solid var(--border-color);
@@ -228,6 +229,7 @@ header nav ul li a:hover {
   font-weight: bold;
   padding: 10px;
   padding-left: 20px;
+  padding-right: 20px;
   width: 50%;
   top: 20%;
   border-right: 3px solid var(--border-color);
@@ -277,10 +279,17 @@ header nav ul li a:hover {
 
 .contact-me a:hover {
   color: var(--text-color);
-  text-decoration: underline var(--secondary-color) 5px;
+  text-shadow: none;
+  text-decoration: underline var(--border-color-secondary) 5px;
 }
 
 /* ----- RESPONSIVENESS STYLING ------------------------------------------------------------------- */
+/* Media query for 768px+ ---------------------------------- */
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 1.7vw;
+  }
+}
 /* Media query for 1200px+ */
 @media screen and (min-width: 1200px) {
 
@@ -329,10 +338,28 @@ header nav ul li a:hover {
     border-right: 3px double var(--border-color-secondary);
     border-bottom: none;
     font-size: 1.4vw;
+    text-align: right;
   }
   .flex-row {
     margin-top: 10px;
     margin-bottom: 2px;
+  }
+
+  /* WORK SECTION STYLING ----------------- */
+  .application-secondary {
+    flex: 1 45%;
+  }
+ 
+  .application-tertiary {
+    flex: 1 45%;
+  }
+
+  .app-title{
+    font-size: 1.2vw;
+  }
+
+  .application-main .app-title {
+    font-size: 1.8vw;
   }
 
   /* CONTACT ME STYLING ----------------- */
@@ -360,15 +387,23 @@ header nav ul li a:hover {
   }
 }
 
+/* Media query for 1800px+ */
+@media screen and (min-width: 1800px) {
+  .section-title {
+    font-size: 1.7vw;
+  }
+}
+
 /* Media query for MAX 400px ---------------------------------- */
 @media screen and (max-width: 400px) {
   .contact-me a {
     font-size: 13px;
   }
-}
-
-/* Media query for MAX 300px ---------------------------------- */
-@media screen and (max-width: 300px) {
+  .app-title {
+    font-size: 15px;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
   .contact-me a {
     font-size: 11px;
   }
@@ -376,6 +411,18 @@ header nav ul li a:hover {
     margin-right: 400px;
   }
   .work-content {
-    font-size: 13px;
+    font-size: 5vw;
   }
 }
+
+/* Media query for MAX 325px ---------------------------------- */
+@media screen and (max-width: 300px) {
+  .app-title {
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+}
+
+
+
