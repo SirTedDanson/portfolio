@@ -11,7 +11,7 @@ Personal Portfolio website
 https://sirteddanson.github.io/portfolio/
 
 ## Screenshot
-
+![](assets/images/readme-screenshot.PNG/)
 
 ## Mobile Screenshot 
 ![](assets/images/readme-screenshot-m.PNG/)
