@@ -1,4 +1,4 @@
-# M.Dwyer Portfolio
+# Matthew Dwyer Portfolio
 
 ## Purpose
 Personal Portfolio website
@@ -14,7 +14,7 @@ https://sirteddanson.github.io/portfolio/
 ![](assets/images/readme-screenshot.PNG/)
 
 ## Mobile Screenshot 
-![](assets/images/readme-screenshot-mobile.PNG/)
+![](assets/images/readme-screenshot-m.PNG/)
 
 ## Contribution
 Made with ❤️ by Matthew Dwyer
