@@ -95,9 +95,7 @@ header nav ul li a:hover {
 
 .hero-quote {
   width: 40%;
-  margin-left: 200px;
-  margin-bottom: 15px;
-  margin-top: 170px;
+  margin: 170px 0px 15px 200px;
   font-style:italic;
   font-weight: bold;
   text-align: right;
@@ -116,10 +114,8 @@ header nav ul li a:hover {
 /* ------------------------------------------------------------------- */
 
 .section-title {
-  padding-bottom: 5px;
   width: 75%;
-  padding: 10px;
-  padding-right: 20px;
+  padding: 10px 20px 10px 10px;
   margin-top: 10px;
   border-bottom: 3px double var(--border-color-secondary);
   text-align: center;
@@ -154,9 +150,7 @@ header nav ul li a:hover {
 
 .work-content {
   width: 80%;
-  margin-left: 40px;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin: 0px 20px 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -189,7 +183,7 @@ header nav ul li a:hover {
 }
 
 .hover-effect {
-  background-color: var(--highlight-color);
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -197,26 +191,24 @@ header nav ul li a:hover {
   height: 100%;
   width: 100%;
   opacity: 1;
-  position: absolute;
+  background-color: var(--highlight-color);
 }
   
 .app-title {
-  color: var(--text-color);
-  background-color: var(--primary-color);
+  position: absolute;
   text-align: center;
-  font-style:italic;
+  font-style: italic;
   font-weight: bold;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px;
   width: 50%;
   top: 20%;
+  color: var(--text-color);
+  background-color: var(--primary-color);
   border-right: 3px solid var(--border-color);
   border-top: 3px solid var(--border-color);
   border-bottom: 3px solid var(--border-color);
   border-bottom-right-radius: 45px;
   border-top-right-radius: 10px;
-  position: absolute;
 }
 
 .application-main .app-title {
@@ -263,9 +255,9 @@ header nav ul li a:hover {
   text-decoration: underline var(--border-color-secondary) 5px;
 }
 
-/* RESPONSIVENESS STYLING START-------------LARGE SCREENS---------------------------------------------------------- */
+/* RESPONSIVENESS STYLING START-------------LARGE SCREENS----------------------------------- */
 
-/* Media query for 768px+ --------------Preliminary Large Screen Adjustment---------------- */
+/* Media query for 768px+ -----------Preliminary Large Screen Adjustment--------- */
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 1.7vw;
@@ -275,7 +267,7 @@ header nav ul li a:hover {
   }
 }
 
-/* Media query for 1200px+ ------------Primary Styling For Large Sceens----------------------*/
+/* Media query for 1200px+ ----------Primary Styling For Large Sceens------------*/
 @media screen and (min-width: 1200px) {
 
   /* HEADER STYLING ----------------- */
@@ -284,9 +276,7 @@ header nav ul li a:hover {
   }
 
   header h1 {
-    padding: 10px;
-    padding-left: 100px;
-    padding-right: 60px;
+    padding: 10px 60px 10px 100px;
     font-size: 50px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -315,10 +305,10 @@ header nav ul li a:hover {
   /* PRIMARY BODY SECTION STYLING ------------------------ */
   .body-margin {
     background-color: var(--background-color);
-    margin-left: 3%;
+    margin-top: 30px;
     margin-right: 5%;
     margin-bottom: 1px;
-    margin-top: 30px;
+    margin-left: 3%;
   }
 
   .section-row {
@@ -335,11 +325,7 @@ header nav ul li a:hover {
   }
   
   /* WORK SECTION STYLING ---------------- */
-  .application-secondary {
-    flex: 1 45%;
-  }
- 
-  .application-tertiary {
+  .application-secondary, .application-tertiary {
     flex: 1 45%;
   }
 
@@ -362,8 +348,8 @@ header nav ul li a:hover {
   }
 }
 
-/* Medai query for 1718px+ ------------------Formatting For Larger Screens------------------------*/ 
-@media screen and (min-width: 1718px) {
+/* Medai query for 1718px+ --------------Formatting For Larger Screens-------------*/ 
+@media screen and (min-width: 1718px) 
   header nav {
     margin-right: 10%;
   }
@@ -391,7 +377,7 @@ header nav ul li a:hover {
   }
 }
 
-/* Medai query for 2100px+ ------------------Big Screen Formatting------------------------*/ 
+/* Medai query for 2100px+ ------------Hero Quote Big Screen Formatting----------------*/ 
 @media screen and (min-width: 2100px) {
   .hero-quote {
     width: 1000px;
@@ -402,19 +388,17 @@ header nav ul li a:hover {
   }
 }
 
-/* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------------------------------------- */
+/* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------- */
 
-/* Media query for MAX 620px -----------Nav transition for small screens--------------- */
+/* Media query for MAX 620px -----------Nav transition for small screens------------ */
 @media screen and (max-width: 620px) {
-
   header nav {
     width: 60%;
   }
 }
 
-/* Media query for MAX 490px ------------ Font Size Adjustments for smaller screens--------------------------- */
+/* Media query for MAX 490px ------Nav and Font Size Adjustments for smaller screens-------- */
 @media screen and (max-width: 490px) {
-
   .app-title {
     font-size: 15px;
     padding-left: 0px;
@@ -430,9 +414,8 @@ header nav ul li a:hover {
   }
 }
 
-/* Media query for MAX 400px -----------Nav Transition Control-------------- */
+/* Media query for MAX 400px -----------Nav And Font Size Adjustments-------------- */
 @media screen and (max-width: 400px) {
-  
   header nav {
     width: 58%;
   }
@@ -441,10 +424,8 @@ header nav ul li a:hover {
   }
 }
 
-
-/* Media query for MAX 290px -----------Title Adjustments for smallest screens-------------- */
+/* Media query for MAX 290px ---------- Adjustments for smallest screens----------- */
 @media screen and (max-width: 290px) {
-
   .app-title {
     font-size: 12px;
     padding-left: 0px;
@@ -454,14 +435,6 @@ header nav ul li a:hover {
   header h1 {
     border-radius: 0;
   }
-
-  .contact-me a {
-    font-size: 11px;
-  }
-}
-
-/* Media query for MAX 290px -----------No Quote for smallest screens-------------- */
-@media screen and (max-width: 290px) {
   
   header nav {
     width: 80%;
@@ -477,7 +450,7 @@ header nav ul li a:hover {
   }
   
   .contact-me a {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .app-title h3 {
