@@ -1,6 +1,6 @@
 :root {
   --background-color: #ece2d8;
-  --text-color: #111655;
+  --text-color: #392f46;
   --primary-color: #e2c982;
   --border-color: #93a8d7;
   --border-color-secondary: #d2a400;
@@ -20,7 +20,7 @@ body {
 }
 
 /* HEADER STYLING */
-/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
 
 header {
   padding-bottom: 20px;
@@ -41,6 +41,7 @@ header h1{
   border-top-right-radius: 10px;
   border-bottom-left-radius: 45px;
   border-top-left-radius: 10px;
+
 }
 
 header a {
@@ -79,6 +80,7 @@ header nav ul li a:hover {
   text-decoration: underline var(--border-color-secondary) 5px;
 }
 
+
 /* HERO STYLING */
 /* ------------------------------------------------------------------- */
 
@@ -100,6 +102,7 @@ header nav ul li a:hover {
   font-weight: bold;
   text-align: right;
   padding: 10px;
+  padding-right: 15px;
   background-color: var(--primary-color);
   background-size: 10px;
   border-left: 3px solid var(--border-color);
@@ -334,7 +337,6 @@ header nav ul li a:hover {
     flex: 1 10%;
   }
   
-  
   /* WORK SECTION STYLING ---------------- */
   .application-secondary {
     flex: 1 45%;
@@ -437,8 +439,8 @@ header nav ul li a:hover {
   }
 }
 
-/* Media query for MAX 290px -----------Title Adjustments for smallest screens-------------- */
-@media screen and (max-width: 290px) {
+/* Media query for MAX 280px -----------Title Adjustments for smallest screens-------------- */
+@media screen and (max-width: 280px) {
 
   .app-title {
     font-size: 12px;
@@ -453,5 +455,18 @@ header nav ul li a:hover {
 
   header h1 {
     border-radius: 0;
+  }
+}
+
+/* Media query for MAX 265px -----------No Quote for smallest screens-------------- */
+@media screen and (max-width: 265px) {
+  
+  .hero-quote {
+    border: none;
+    background: none;
+  }
+
+  .hero-quote p{
+    display: none;
   }
 }
