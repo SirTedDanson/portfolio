@@ -406,7 +406,7 @@ header nav ul li a:hover {
 
 /* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------------------------------------- */
 
-/* Media query for 400px to 535px -----------Nav transition for small screen transition--------------- */
+/* Media query for 200px to 600px -----------Nav transition for small screen transition--------------- */
 @media screen and (min-width: 200px) and (max-width: 600px) {
   header nav {
     width: 72%;
