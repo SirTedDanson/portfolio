@@ -362,7 +362,7 @@ header nav ul li a:hover {
   }
 }
 
-/* Medai query for 1718px+ ------------------Formatting For Largest Screens------------------------*/ 
+/* Medai query for 1718px+ ------------------Formatting For Larger Screens------------------------*/ 
 @media screen and (min-width: 1718px) {
   header nav {
     margin-right: 10%;
@@ -390,6 +390,8 @@ header nav ul li a:hover {
     margin-right: 8%;
   }
 }
+
+/* Medai query for 2100px+ ------------------Big Screen Formatting------------------------*/ 
 @media screen and (min-width: 2100px) {
   .hero-quote {
     width: 1000px;
@@ -402,7 +404,7 @@ header nav ul li a:hover {
 
 /* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------------------------------------- */
 
-/* Media query for max 620px -----------Nav transition for small screen transition--------------- */
+/* Media query for MAX 620px -----------Nav transition for small screens--------------- */
 @media screen and (max-width: 620px) {
 
   header nav {
@@ -428,8 +430,7 @@ header nav ul li a:hover {
   }
 }
 
-
-/* Media query for MAX 370px -----------Nav Transition Control-------------- */
+/* Media query for MAX 400px -----------Nav Transition Control-------------- */
 @media screen and (max-width: 400px) {
   
   header nav {
@@ -459,7 +460,7 @@ header nav ul li a:hover {
   }
 }
 
-/* Media query for MAX 265px -----------No Quote for smallest screens-------------- */
+/* Media query for MAX 290px -----------No Quote for smallest screens-------------- */
 @media screen and (max-width: 290px) {
   
   header nav {
