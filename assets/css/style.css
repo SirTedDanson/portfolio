@@ -372,11 +372,6 @@ header nav ul li a:hover {
     margin-right: 10%;
   }
 
-  header nav ul li a {
-    font-size: 1.1vw;
-    text-align: center;
-  }
-
   .hero-quote {
     font-size: 20px;
     text-align: bottom;
@@ -412,7 +407,7 @@ header nav ul li a:hover {
 /* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------------------------------------- */
 
 /* Media query for 400px to 535px -----------Nav transition for small screen transition--------------- */
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
   header nav {
     width: 72%;
   }
