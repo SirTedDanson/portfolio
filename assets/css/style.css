@@ -54,19 +54,19 @@ header nav {
 }
 
 header nav ul {
-  margin-top: 20px;
-  width: 100%;
-  justify-content: center;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: center;
+  flex: 0 80%;
 }
 
 header nav ul li {
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
   text-align: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: auto;
 }
 
 header nav ul li a {
@@ -299,12 +299,8 @@ header nav ul li a:hover {
   }
 
   header nav ul {
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: space-between;
-  }
-
-  header nav ul li {
-    margin-right: 7%;
   }
 
   .hero {
@@ -406,22 +402,16 @@ header nav ul li a:hover {
 
 /* RESPONSIVENESS STYLING CONTINUE-------------SMALL SCREENS---------------------------------------------------------- */
 
-/* Media query for 200px to 600px -----------Nav transition for small screen transition--------------- */
-@media screen and (min-width: 200px) and (max-width: 600px) {
+/* Media query for max 620px -----------Nav transition for small screen transition--------------- */
+@media screen and (max-width: 620px) {
+
   header nav {
-    width: 72%;
-  }
-  header nav li {
-    width: 110%;
+    width: 60%;
   }
 }
 
-/* Media query for MAX 400px ------------ Font Size Adjustments for smaller screens--------------------------- */
-@media screen and (max-width: 400px) {
-
-  .contact-me a {
-    font-size: 13px;
-  }
+/* Media query for MAX 490px ------------ Font Size Adjustments for smaller screens--------------------------- */
+@media screen and (max-width: 490px) {
 
   .app-title {
     font-size: 15px;
@@ -432,10 +422,27 @@ header nav ul li a:hover {
   .work-content {
     font-size: 5vw;
   }
+
+  header nav {
+    width: 80%;
+  }
 }
 
-/* Media query for MAX 280px -----------Title Adjustments for smallest screens-------------- */
-@media screen and (max-width: 280px) {
+
+/* Media query for MAX 370px -----------Nav Transition Control-------------- */
+@media screen and (max-width: 400px) {
+  
+  header nav {
+    width: 58%;
+  }
+  .contact-me a {
+    font-size: 14px;
+  }
+}
+
+
+/* Media query for MAX 290px -----------Title Adjustments for smallest screens-------------- */
+@media screen and (max-width: 290px) {
 
   .app-title {
     font-size: 12px;
@@ -443,19 +450,22 @@ header nav ul li a:hover {
     padding-right: 20px;
   }
 
-  header nav ul li {
-    margin-right: 50px;
-    margin-left: 50px;
-  }
-
   header h1 {
     border-radius: 0;
+  }
+
+  .contact-me a {
+    font-size: 11px;
   }
 }
 
 /* Media query for MAX 265px -----------No Quote for smallest screens-------------- */
-@media screen and (max-width: 265px) {
+@media screen and (max-width: 290px) {
   
+  header nav {
+    width: 80%;
+  }
+
   .hero-quote {
     border: none;
     background: none;
@@ -463,5 +473,13 @@ header nav ul li a:hover {
 
   .hero-quote p{
     display: none;
+  }
+  
+  .contact-me a {
+    font-size: 9px;
+  }
+
+  .app-title h3 {
+    font-size: 10px;
   }
 }
