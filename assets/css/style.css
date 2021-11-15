@@ -349,7 +349,8 @@ header nav ul li a:hover {
 }
 
 /* Medai query for 1718px+ --------------Formatting For Larger Screens-------------*/ 
-@media screen and (min-width: 1718px) 
+@media screen and (min-width: 1718px) {
+  
   header nav {
     margin-right: 10%;
   }
@@ -428,8 +429,6 @@ header nav ul li a:hover {
 @media screen and (max-width: 290px) {
   .app-title {
     font-size: 12px;
-    padding-left: 0px;
-    padding-right: 20px;
   }
 
   header h1 {
