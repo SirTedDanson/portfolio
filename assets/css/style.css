@@ -165,21 +165,21 @@ header nav ul li a:hover {
 }
 
 .application-main {
-  background-image: url("../images/run-buddy-background.PNG");
+  background-image: url("../images/Overseer.PNG");
   background-position: top left;
   height: 300px;
   flex: 1 100%;
 }
 
 .application-secondary, .application-tertiary {
-  background-image: url("../images/horiseon-background.PNG");
+  background-image: url("../images/run-buddy-background.PNG");
   background-position: center;
   height: 150px;
   flex: 1 50%;
 }
 
 .application-tertiary {
-  background-image: url("../images/robot-gladiators-background.PNG");
+  background-image: url("../images/horiseon-background.PNG");
 }
 
 .hover-effect {
